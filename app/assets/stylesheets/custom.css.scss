@@ -1,1 +1,22 @@
 @import 'bootstrap/dist/css/bootstrap';
+
+$white: white;
+
+.navbar {
+    background-color: #FF5733;
+    padding: 1em 8em;
+}
+
+.navbar > .navbar-brand {
+    color: $white;
+}
+
+.navbar-nav > .nav-item > .nav-link {
+    color: $white;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav > .nav-item > .nav-link:hover {
+    color: #DAF7A6;
+    border-bottom: 0.1em solid #DAF7A6;
+}
