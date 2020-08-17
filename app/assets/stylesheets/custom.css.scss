@@ -1,22 +1,64 @@
 @import 'bootstrap/dist/css/bootstrap';
+@import "font-awesome";
 
 $white: white;
 
+$bold: bold;
+$oxford-blue: #0C1B33;
+$black-coffee: #32292F;
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
 .navbar {
-    background-color: #FF5733;
-    padding: 1em 8em;
+    background-color: $black-coffee;
+    padding: 1em 8em !important;
+    margin-right: 0 !important;
 }
 
 .navbar > .navbar-brand {
     color: $white;
 }
 
-.navbar-nav > .nav-item > .nav-link {
-    color: $white;
-    font-weight: bold;
+.navbar > .navbar-collapse > .navbar-nav > .nav-item > .nav-link {
+    color: #917889;
+    font-weight: $bold;
 }
 
-.navbar .navbar-nav > .nav-item > .nav-link:hover {
-    color: #DAF7A6;
-    border-bottom: 0.1em solid #DAF7A6;
+.navbar > .navbar-collapse > .navbar-nav >.nav-item > .nav-link:hover {
+    color: $white;
+    border-bottom: 0.1em solid $white;
+    padding-bottom: 0.1em;
+}
+
+.contact-me > .card-header {
+    background-color: #876E7E;
+    color: $white;
+    font-weight: $bold;
+}
+
+.contact-me > .card-body > form > button {
+    background-color: #876E7E;
+    border-color: #876E7E;
+}
+
+.page-footer {
+    background-color: $black-coffee;
+    color: #917889;
+}
+
+
+.list-unstyled > .list-inline-item > .btn-fb {
+    font-size: 1.8em;
+    color: #876E7E;
+}
+
+.list-unstyled > .list-inline-item > .btn-fb:hover {
+    font-size: 1.8em;
+    color: white;
+}
+
+.footer-copyright {
+    background-color: $oxford-blue;
 }
