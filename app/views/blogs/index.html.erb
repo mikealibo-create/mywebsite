@@ -18,7 +18,7 @@
         <tr>
           <td><%= image_tag blog.avatar.url(:medium) %></td>
           <td><%= blog.title %></td>
-          <td><%= blog.content %></td>
+          <td><%= blog.content.html_safe %></td>
           <td><%= link_to 'Show', blog, class: "btn btn-sm btn-primary btn-block" %></td>
           <td><%= link_to 'Edit', edit_blog_path(blog), class: "btn btn-sm btn-warning btn-block" %></td>
           <td><%= link_to 'Destroy', blog, class: "btn btn-sm btn-danger btn-block", method: :delete, data: { confirm: 'Are you sure?' } %></td>

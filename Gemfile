@@ -21,6 +21,8 @@ gem 'jbuilder', '~> 2.7'
 gem "font-awesome-rails"
 
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+
+gem 'ckeditor', github: 'galetahub/ckeditor'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
