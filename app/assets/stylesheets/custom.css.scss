@@ -11,10 +11,30 @@ $black-coffee: #32292F;
     font-weight: bold;
 }
 
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
 .navbar {
     background-color: $black-coffee;
     padding: 1em 8em !important;
     margin-right: 0 !important;
+}
+
+@media (min-width: 576px) {
+    .navbar {
+        background-color: $black-coffee;
+        padding: 1em 3em !important;
+        margin-right: 0 !important;
+    }
 }
 
 .navbar > .navbar-brand {
@@ -59,6 +79,18 @@ $black-coffee: #32292F;
     color: white;
 }
 
-.footer-copyright {
-    background-color: $oxford-blue;
+.hero {
+    margin-top : 5em;
+
+    color: $black-coffee;
+    background-color: white;
+}
+
+.hero img {
+    border:2px solid $black-coffee;
+    background: no-repeat center center fixed;
+}
+
+.information {
+    margin-top: 5em;
 }
