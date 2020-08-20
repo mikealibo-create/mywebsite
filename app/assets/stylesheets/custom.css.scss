@@ -29,14 +29,6 @@ $black-coffee: #32292F;
     margin-right: 0 !important;
 }
 
-@media (min-width: 576px) {
-    .navbar {
-        background-color: $black-coffee;
-        padding: 1em 3em !important;
-        margin-right: 0 !important;
-    }
-}
-
 .navbar > .navbar-brand {
     color: $white;
 }
@@ -93,4 +85,12 @@ $black-coffee: #32292F;
 
 .information {
     margin-top: 5em;
+}
+
+@media (min-width: 576px) {
+    .navbar {
+        background-color: $black-coffee;
+        padding: 1em 3em !important;
+        margin-right: 0 !important;
+    }
 }

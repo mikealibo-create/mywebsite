@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'blog', to: 'pages#blog'
+  resources :blogs
+  get 'blog', to: 'pages#blog', as: 'public_blog'
   get 'portfolio', to: 'pages#portfolio'
   get 'contact', to: 'pages#contact'
   root 'pages#home'

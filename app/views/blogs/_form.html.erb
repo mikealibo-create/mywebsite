@@ -1,0 +1,32 @@
+<%= form_with(model: blog, local: true, :html => { :multipart => true }) do |form| %>
+  <% if blog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
+
+      <ul>
+        <% blog.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="custom-file">
+    <%= form.file_field :avatar, class: "custom-file-input" %>
+    <label class="custom-file-label" for="customFile">Choose file</label>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_area :content, class: "form-control" %>
+  </div>
+
+  <div class="actions mt-3">
+    <%= form.submit({:class => "btn btn-success pull-left mr-2"}) %>
+  </div>
+<% end %>
