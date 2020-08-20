@@ -16,7 +16,7 @@
     <tbody>
       <% @blogs.each do |blog| %>
         <tr>
-          <td><%= blog.image %></td>
+          <td><%= image_tag blog.avatar.url(:medium) %></td>
           <td><%= blog.title %></td>
           <td><%= blog.content %></td>
           <td><%= link_to 'Show', blog, class: "btn btn-sm btn-primary btn-block" %></td>
