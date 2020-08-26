@@ -6,6 +6,19 @@ $white: white;
 $bold: bold;
 $oxford-blue: #0C1B33;
 $black-coffee: #32292F;
+$black: black;
+
+.text-black {
+    color: $black;
+}
+
+.text-decoration-none:hover {
+    text-decoration: none;
+}
+
+.text-hover-black:hover {
+    color: $black;
+}
 
 .font-weight-bold {
     font-weight: bold;

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admin_users
   mount Ckeditor::Engine => '/ckeditor'
   resources :blogs
   get 'blog', to: 'pages#blog', as: 'public_blog'
