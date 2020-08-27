@@ -12,13 +12,13 @@
   <% end %>
 
   <div class="row">
-    <div class="col-6">
-      <div class="custom-file">
-        <%= form.file_field :avatar, class: "custom-file-input", id: 'imgInp' %>
-        <label class="custom-file-label" for="customFile">Choose file</label>
-      </div>
-    
-      
+    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      <div class="form-group">
+        <label class="pull-left">Image</label>
+        <%= form.file_field :avatar, class: "form-control-file pull-right", id: 'blogImage' %>
+        <br>
+        <img class="blog-img-prev img-fluid display_none">
+      </div>      
     
       <div class="field">
         <%= form.label :title %>
@@ -29,12 +29,6 @@
         <%= form.label :content %>
         <%= form.cktext_area :content, id: 'sometext' %>
       </div>
-    </div>
-    <div class="col-6">
-      <div class="field">
-        <img src="" alt="Image preview..." class="img-prev img-fluid">
-      </div>
-    
     </div>
   </div>
 

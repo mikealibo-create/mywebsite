@@ -10,16 +10,15 @@
           <%= image_tag blog.avatar.url(:medium), class: 'img-fluid img-thumbnail' %>
         </picture>
       </div>
-      <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 p-2 mt-3">
+      <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 p-2 mt-3 blog_content">
         <h4><%= link_to blog.title, blog, class: 'text-black text-hover-black' %></h4>
         <%= minimize_text(blog.content, 45) %>
-        <div class='container pl-0 pr-0'>
+        <div class='container pl-0 pr-0 blog_actions display_none'>
           <%= link_to 'Show', blog, class: "btn btn-primary" %>
           <%= link_to 'Update', edit_blog_path(blog), class: "btn btn-warning" %>
           <%= link_to 'Delete', blog, class: "btn btn-danger pull-right", method: :delete, data: { confirm: 'Are you sure?' } %>
         </div>
       </div>
-      ​
     <% end %>
   </div>
 

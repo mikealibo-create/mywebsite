@@ -100,6 +100,18 @@ $black: black;
     margin-top: 5em;
 }
 
+#blogImage {
+    width: 90%;
+}
+
+.display_none {
+    display: none;
+}
+
+.blog_content:hover .blog_actions{
+    display: block;
+}
+
 @media (min-width: 576px) {
     .navbar {
         background-color: $black-coffee;
